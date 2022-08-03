@@ -7,7 +7,7 @@ import {ReferencesService} from "./references.service";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  cards$ = this.ref.getCardsStatus();
+  cardsIds$ = this.ref.getCardsIds();
 
   constructor(private ref: ReferencesService) {
   }

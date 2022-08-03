@@ -1,10 +1,10 @@
-<ng-container *ngIf="cards$ | async as cards">
+<ng-container *ngIf="cardsIds$ | async as cardsIds">
   <div class="container shadow rounded p-4 mt-4 mouse">
-    <app-categories [categoryId]="cards.category"></app-categories>
-    <app-domains [domainId]="cards.domain"></app-domains>
-    <app-faqs [faqId]="cards.faq"></app-faqs>
+    <app-categories [categoryId]="cardsIds.category"></app-categories>
+    <app-domains [domainId]="cardsIds.domain"></app-domains>
+    <app-faqs [faqId]="cardsIds.faq"></app-faqs>
   </div>
-  <div class="container shadow rounded p-4 mt-4 mouse" *ngIf="cards.faq">
+  <div class="container shadow rounded p-4 mt-4 mouse" *ngIf="cardsIds.faq">
     <app-detail-faq></app-detail-faq>
   </div>
 </ng-container>

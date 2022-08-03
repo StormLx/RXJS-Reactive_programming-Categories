@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import {BehaviorSubject, combineLatest, map, Observable, of, switchMap} from "rxjs";
+import {BehaviorSubject, combineLatest, map, Observable} from "rxjs";
 
 @Injectable({
   providedIn: 'root'
@@ -15,12 +15,9 @@ export class ReferencesService {
   private selectedFAQSubject = new BehaviorSubject<number>(0);
   selectedFAQ$ = this.selectedFAQSubject.asObservable();
 
-  cards$ = combineLatest([this.selectedCategory$, this.selectedDomain$, this.selectedFAQ$]).pipe(
+  cardsIds$ = combineLatest([this.selectedCategory$, this.selectedDomain$, this.selectedFAQ$]).pipe(
     map(([category, domain, faq]) => ({category, domain, faq}))
   );
-
-  constructor() {
-  }
 
   selectCategory(categoryId: number): void {
     this.selectedCategorySubject.next(categoryId);
@@ -34,7 +31,7 @@ export class ReferencesService {
     this.selectedFAQSubject.next(faqId);
   }
 
-  getCardsStatus(): Observable<any> {
-    return this.cards$;
+  getCardsIds(): Observable<any> {
+    return this.cardsIds$;
   }
 }

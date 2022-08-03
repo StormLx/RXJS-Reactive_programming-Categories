@@ -16,7 +16,7 @@ export class FaqsComponent {
     switchMap(domain =>
       domain ?
         this.data.FAQs$.pipe(
-          map(FAQs => FAQs.filter(FAQ => FAQ.domainId === domain)))
+          map(FAQs => FAQs.filter(faq => faq.domainId === domain)))
         : of([])
     ));
 
