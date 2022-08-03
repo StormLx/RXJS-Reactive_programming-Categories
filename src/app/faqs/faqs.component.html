@@ -1,0 +1,9 @@
+<div class="row">
+  <div class="col" *ngFor="let faq of FAQs$ | async as FAQs" (click)="onSelectFAQ(faq)">
+    <div class="card" data="faq" [ngClass]="{'faq': faq.id === faqId}">
+      <div class="card-body">
+        <h5 class="card-title">{{faq.question}}</h5>
+      </div>
+    </div>
+  </div>
+</div>

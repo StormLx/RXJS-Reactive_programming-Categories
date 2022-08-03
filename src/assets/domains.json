@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "categoryId": 1,
+    "name": "Domain 1"
+  },
+  {
+    "id": 2,
+    "categoryId": 1,
+    "name": "Domain 2"
+  },
+  {
+    "id": 3,
+    "categoryId": 1,
+    "name": "Domain 3"
+  },
+  {
+    "id": 4,
+    "categoryId": 2,
+    "name": "Domain 4"
+  },
+  {
+    "id": 5,
+    "categoryId": 2,
+    "name": "Domain 5"
+  },
+  {
+    "id": 6,
+    "categoryId": 2,
+    "name": "Domain 6"
+  },
+  {
+    "id": 7,
+    "categoryId": 3,
+    "name": "Domain 7"
+  },
+  {
+    "id": 8,
+    "categoryId": 3,
+    "name": "Domain 8"
+  },
+  {
+    "id": 9,
+    "categoryId": 3,
+    "name": "Domain 9"
+  }
+]

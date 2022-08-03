@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.css';
+
+.card.category, .card:hover[data=category] {
+  background-color: #cc0066;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+.card.domain, .card:hover[data=domain] {
+  background-color: #007bff;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+.card.faq, .card:hover[data=faq] {
+  background-color: #00cc8f;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.mouse {
+  cursor: pointer;
+}

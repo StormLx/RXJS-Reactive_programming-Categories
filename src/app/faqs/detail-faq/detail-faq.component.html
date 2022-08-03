@@ -1,0 +1,12 @@
+<div class="row" *ngIf="faq$ | async as faq">
+  <div class="col">
+    <div class="card">
+      <div class="card-header">
+        {{faq.question}}
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">{{faq.answer}}</h5>
+      </div>
+    </div>
+  </div>
+</div>

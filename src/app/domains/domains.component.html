@@ -1,0 +1,10 @@
+<div class="row mb-3">
+  <div class="col" *ngFor="let domain of domains$ | async as domains" (click)="onSelectDomain(domain)">
+    <div class="card" data="domain"
+         [ngClass]="{'domain': domainId === domain.id}">
+      <div class="card-body">
+        <h5 class="card-title">{{domain.name}}</h5>
+      </div>
+    </div>
+  </div>
+</div>
